@@ -1,0 +1,126 @@
+.todoList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #8a2be2; /* Blueviolet */
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.text {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+input[type="text"] {
+  width: 320px;
+  padding: 12px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Addbutton {
+  color: white;
+  background-color: #00aaff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.Addbutton:hover {
+  background-color: #007acc;
+  transform: scale(1.05);
+}
+
+.delete-button {
+  color: white;
+  background-color: #ff5c5c;
+  border: none;
+  padding: 5px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.delete-button:hover {
+  background-color: #e04b4b;
+  transform: scale(1.1);
+}
+
+.moveup,
+.movedown {
+  color: white;
+  background-color: #ffa500;
+  border: none;
+  padding: 5px 15px;
+  margin-left: 5px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.moveup:hover,
+.movedown:hover {
+  background-color: #cc8400;
+  transform: scale(1.1);
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-2px);
+}
+
+li span.text {
+  flex-grow: 1;
+  margin-right: 10px;
+  word-break: break-word;
+}
+
+button {
+  white-space: nowrap;
+}
